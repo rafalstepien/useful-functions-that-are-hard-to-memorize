@@ -12,3 +12,10 @@ function dc_trace_cmd() {
     dc_trace_cmd $parent $level
   fi
 }
+
+
+# Dump database schema and data to file
+pg_dump -h localhost -p <port> -U <user> -d <database> > database.sql
+
+# Create database from schema
+psql -h localhost -p <port> -U <user> -d <database> < database.sql
