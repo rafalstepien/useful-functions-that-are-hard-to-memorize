@@ -23,7 +23,7 @@ server = app.server
 
 
 ### docker-compose.yml
-Remember to connect other volumes with data if the application uses data from outside of the current mount scope
+Remember to mount other volumes with data if the application uses data from outside of the current mount scope
 ```yaml
 version: "3"
 services:
