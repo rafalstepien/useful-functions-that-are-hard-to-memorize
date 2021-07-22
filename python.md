@@ -1,7 +1,7 @@
 # Python
 
 ## Get profiling stats of why your function is slow
-```{python}
+```python
 import cProfile
 import pstats
 
